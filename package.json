@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server/server.js",
     "test": "mocha server/**/*.test.js",
-    "test-watch": "nodemon --exec 'npm test'"
+    "test-watch": "nodemon --exec 'npm test'",
+    "postinstall": "./node_modules/bower/bin/bower install"
   },
   "engines": {
     "node": "7.3.0"
@@ -14,6 +15,7 @@
   "author": "Travis Haley",
   "license": "ISC",
   "dependencies": {
+    "bower": "^1.8.0",
     "express": "^4.14.1",
     "socket.io": "^1.7.3"
   },
